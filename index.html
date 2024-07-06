@@ -37,22 +37,7 @@
     // Step 5: After the loop, remember to return the result var added to the nums index
     // Step 6: Take it for a test drive in the console
     function sumNumsFor(nums) {
-      // console.log(nums)
-
-      // Gab's solution : he added a storage value for nums[i]
-      // let result = 0
-      // for (let idx = 0; idx <nums.length; idx++) {
-      //  let element = nums[idx]
-      //    if (typeof elememt === 'number') {
-              // if (element ===13) {
-                  // return 'I'm too superstitious!''
-              //}
-              // result += element;
-        //  }
-      //}
-      // return result
-      // }
-
+     // console.log(nums) 
       let result = 0;
       for (let i = 0; i < nums.length; i++) {
         if (nums[i] === 13){
@@ -63,6 +48,21 @@
       }
       return result
     }
+
+    // Gab's solution: : he added a storage value for nums[i]
+    // function sumNumsFor(nums) {
+    //   let result = 0;
+    //   for (let idx = 0; idx < nums.length; idx++) {
+    //     let element = nums[idx]
+    //     if (typeof element === 'number') {
+    //       if (element === 13) {
+    //               return "I'm too superstitious!"
+    //           }
+    //           result += element;
+    //     }
+    //   }
+    //   return result
+    // }
 
     // 👉 CHALLENGE 2
     // 🧠 The function stripVowels takes a string, strips all lowercase vowel letters (a,e,i,o,u) from it and returns it.
@@ -94,7 +94,8 @@
         }
       }
       return result;
-    }
+     }
+
     // Gab's solution:
     // function stripVowels(str) {
     //   const split = str.split('')
@@ -153,7 +154,7 @@
     //     let elem = nums[idx]
     //     if (typeof elem === 'number') {
     //       if (elem === 13) {
-    //         return 'I'm too superstitious!'
+    //         return "I'm too superstitious!"
     //       }
     //       result += elem
     //     }
@@ -188,8 +189,8 @@
       // b: decrease lifepoints by round number
     // Step 4: Return return statement: use a template literal to indicate the round in which the player died
     function fightMonsters(lifePoints) {
-      let points = 0;
-      let round = 1;
+      //let points = 0;
+      let round = 0;
       while (lifePoints > 0){
         round++; // increase rounds by 1
         lifePoints -= round; // decrase lifepoints by round number
@@ -238,7 +239,7 @@
     // function findEvenNums(ints) {
     //   let evens = []
     //   for (let idx in ints) {
-    //     let num = ints[indx]
+    //     let num = ints[idx]
     //     if (num % 2 === 0) {
     //       evens.push(num)
     //     }
@@ -416,7 +417,7 @@
     //     return arr.slice(1, arr.length -1)
     //   }
     // }
-    
+
     // 🧪 TESTS, do not work below this line
     // 🧪 TESTS, do not work below this line
     // 🧪 TESTS, do not work below this line
